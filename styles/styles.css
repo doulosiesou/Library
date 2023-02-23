@@ -1,0 +1,145 @@
+:root {
+    margin: 0;
+    padding: zero;
+}
+
+body {
+    font-family: Roboto;
+    background-color: rgb(207, 240, 240);
+}
+
+.container {
+    /* background-image:  url('./images/Three_kings_or_three_gods.jpg'); */
+    display: grid;
+    grid-template-columns: .5fr 6fr .5fr;
+}
+
+.sidebar-left,
+.sidebar-right {
+    /* background-color: rgb(200,200,150); */
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.sidebar-left {
+    grid-column: 1;
+}
+
+.sidebar-right {
+    grid-column: 3;
+}
+
+.center-section {
+    grid-column: 2;
+}
+
+.center-section-header {
+    margin: 5vh 0 5vh 0;
+    padding: 10px;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.runes {
+    margin: 40px 0 40px 0;
+    width: 5vw;
+    height: auto;
+}
+
+#lokis-helmet {
+    margin: 20px 0 20px 0;
+    width: 5vw;
+}
+
+#lokis-name {
+    background-color: rgb(207, 240, 240);
+}
+
+.new-book-form {
+    height: 30vh;
+    margin: 2vh;
+    /* border: 2px red solid; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset {
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-item {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-button, #submit-edits-button {
+    margin: 10px;
+    font-size: 20px;
+    background-color:ivory;
+    color: black;
+}
+
+#book-title,
+#author,
+#published-date,
+#number-pages,
+#read-status {
+    font-size: 18px;
+}
+
+table {
+    width: 100%;
+    height: 40vh;
+    padding: 10px 24px 10px 24px;
+    /* border: 2px solid black; */
+    font-size: 24px;
+}
+
+.table-heading {
+    background-color: #E5FDA7;
+    border: solid 1px rgb(180,180,180);
+    height: 7vh;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+td {
+    background-color: aquamarine;
+    height: 7vh;
+    border: 1px rgb(180,180,180) solid;
+    text-align: center;
+}
+
+.delete-button,
+.edit-button {
+    margin: 10px 0 10px 0;
+    font-size: 24px;
+}
+
+.footer {
+    font-family: 'Cinzel', Georgia, serif;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+    <title>Loki's Library</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="sidebar-left">
+            <img src="./images/R1.png" class="runes" alt="Rune">
+            <img src="./images/R2.png" class="runes" alt="Rune">
+            <img src="./images/R3.png" class="runes" alt="Rune">
+            <img src="./images/R4.png" class="runes" alt="Rune">
+            <img src="./images/R5.png" class="runes" alt="Rune">
+            <img src="./images/R6.png" class="runes" alt="Rune">
+        </div>
+            
+        <div class="center-section">
+            <div class="center-section-header">
+                <img src="./images/owl_helmet.png" id="lokis-helmet" alt="Loki's helmet">
+                <img src="./images/Loki1.png" id="lokis-name" alt="Loki's name in runes">
+                <img src="./images/owl_helmet.png" id="lokis-helmet" alt="Loki's helmet">
+            </div>
+            <div class="new-book-form">
+                
+                <div class="form-section">
+                    <fieldset>
+                        <legend>Enter A Book for Loki's Library</legend>
+                            <div class="form-item">
+                                <label for="book-title">Book Title</label>
+                                <input type="text" id="book-title" required>
+                            </div>
+
+                            <div class="form-item">
+                                <label for="author">Author</label>
+                                <input type="text" id="author" required>
+                            </div>
+                            
+                            <div class="form-item">
+                                <label for="published-date">Date Published</label>
+                                <input type="text" id="published-date">
+                            </div>
+
+                            <div class="form-item">
+                                <label for="number-pages">Number of Pages</label>
+                                <input type="text" id="number-pages">
+                            </div>
+
+                            <div class="form-item">
+                                <label for="read-status">Status</label>
+                                <select name="read-status" id="read-status">
+                                    <option value="read">Read</option>
+                                    <option value="havent-read">Haven't Read</option>
+                                </select>
+                            </div>
+                    </fieldset>
+                    <input type="submit" name="submit" id="submit" class="submit-button">
+                </div>
+
+            </div>
+
+            <div id="library-contents">
+                <table id="library-table">
+                    <tr class="table-header">
+                        <td class="table-heading">Book Title</td>
+                        <td class="table-heading">Author</td>
+                        <td class="table-heading">Date Published</td>
+                        <td class="table-heading">Number of Pages</td>
+                        <td class="table-heading">Read Status</td>
+                        <td class="table-heading">Delete?</td>
+                    </tr>
+
+                    <tr class="table-row-odd">
+                        <td>The Hobbit</td>
+                        <td>JRR Tolkien</td>
+                        <td>1937</td>
+                        <td>310</td>
+                        <td>read</td>
+                        <td><button class="delete-button">Delete</button></td>
+                    </tr>
+
+                    <tr class="table-row-even">
+                        <td>Dune</td>
+                        <td>Frank Herbert</td>
+                        <td>1965</td>
+                        <td>412</td>
+                        <td>read</td>
+                        <td><button class="delete-button">Delete</button></td>
+                    </tr>
+
+                    <tr class="table-row-odd">
+                        <td>Starship Troopers</td>
+                        <td>Robert Heinlein</td>
+                        <td>1959</td>
+                        <td>263</td>
+                        <td>read</td>
+                        <td><button class="delete-button">Delete</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="sidebar-right">
+            <img src="./images/R7.png" class="runes" alt="Rune">
+            <img src="./images/R8.png" class="runes" alt="Rune">
+            <img src="./images/R9.png" class="runes" alt="Rune">
+            <img src="./images/R10.png" class="runes" alt="Rune">
+            <img src="./images/R11.png" class="runes" alt="Rune">
+            <img src="./images/R12.png" class="runes" alt="Rune">
+        </div>
+
+    </div>
+    <div class="footer">
+        <p>Loki's Library</p>
+    </div>
+   
+    <script src="./scripts/jscript.js"></script>
+</body>
+</html>
