@@ -1,6 +1,6 @@
-// Book library project
+// Book library project - revised with Class for books
 // By: Gregory J. McKim
-// Feb 23, 2023
+// April 14, 2023
 
 //Declare global variables
 let subBtn = document.querySelector('.submit-button');
@@ -9,6 +9,22 @@ let libraryTable = document.getElementById("library-table");
 let libraryTableBody = document.getElementById("tableBody");
 let myLibrary = [];
 let rowInd = 0;
+
+//New Book constructor
+class Book{
+    constructor(ID,title, author, publishedDate, numPages, hasRead){
+        this.ID = ID,
+        this.title = title,
+        this.author = author,
+        this.publishedDate = publishedDate,
+        this.numPages = numPages,
+        this.hasRead = hasRead
+    }
+
+    info() {
+        return `The ${this.title} was written by ${this.author} in ${this.publishedDate} and is ${this.numPages} pages long`
+    }
+}
 
 //Add 3 books to the library for start
 let book1 = new Book(0,"The Hobbit", "JRR Tolkien", 1937, 310, true);
@@ -90,20 +106,6 @@ function addNewRow(newEntry) {
     row.appendChild(c8);
 
     libraryTableBody.appendChild(row);
-}
-
-//New Book constructor
-function Book(ID,title, author, publishedDate, numPages, hasRead) {
-    
-    this.ID = ID
-    this.title = title
-    this.author = author
-    this.publishedDate = publishedDate
-    this.numPages = numPages
-    this.hasRead = hasRead
-    this.info = function() {
-        return `The ${title} was written by ${author} in ${publishedDate} and is ${numPages} pages long`
-    }
 }
 
 //Submits the new book values to the myLibrary array
